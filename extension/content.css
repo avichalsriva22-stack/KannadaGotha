@@ -1,0 +1,37 @@
+#kannada-gotta-captions {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px 24px;
+  color: white;
+  z-index: 2147483647;
+  max-width: 80%;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+#kannada-gotta-captions .kn-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4CAF50;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+#kannada-gotta-captions .en-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+#kannada-gotta-captions:empty {
+  display: none;
+}

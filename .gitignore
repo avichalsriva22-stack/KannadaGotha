@@ -1,0 +1,7 @@
+﻿.idea/
+__pycache__/
+*.pyc
+.venv/
+venv/
+KannadaGotta-resume-points.md
+KannadaGotta-resume-points-latex.md

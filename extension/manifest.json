@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Kannada Live Caption",
+  "version": "1.0",
+  "description": "Real-time Kannada to English captions for any browser tab.",
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "scripting",
+    "offscreen"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://127.0.0.1:8000/*",
+    "ws://127.0.0.1:8000/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["pcm-worklet.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
