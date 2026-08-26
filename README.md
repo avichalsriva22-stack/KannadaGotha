@@ -119,7 +119,7 @@ Stop with **Stop Captioning**. The popup will also reset if the WebSocket drops.
 - Chrome/Edge internal pages cannot be captured.
 - Kannada text is not returned as a full transcript yet (English-only Whisper `translate` path).
 - No GPU path wired up (`device="cpu"` is hardcoded).
-- No git history in this folder; treat this as a local project snapshot.
+
 
 ## Tests
 
